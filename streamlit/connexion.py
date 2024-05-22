@@ -13,11 +13,11 @@ with open('config.yml') as file:
 #{'usernames': {'jsmith': {'email': 'jsmith@gmail.com', 'failed_login_attempts': 0, 'logged_in': False, 'name': 'John Smith', 'password': 'abc'}, 'rbriggs': {'email': 'rbriggs@gmail.com', 'failed_login_attempts': 0, 'logged_in': False, 'name': 'Rebecca Briggs', 'password': 'def'}}}
 
 authenticator = stauth.Authenticate(
-    config['credentials'],
-    config['cookie']['name'],
-    config['cookie']['key'],
-   config['cookie']['expiry_days'],
-    config['pre-authorized']
+    {'usernames': {'jsmith': {'email': 'jsmith@gmail.com', 'failed_login_attempts': 0, 'logged_in': False, 'name': 'John Smith', 'password': 'abc'}, 'rbriggs': {'email': 'rbriggs@gmail.com', 'failed_login_attempts': 0, 'logged_in': False, 'name': 'Rebecca Briggs', 'password': 'def'}}},#config['credentials'],
+    "toto", #config['cookie']['name'],
+    "toto", #config['cookie']['key'],
+   30, #config['cookie']['expiry_days'],
+    "test", #1config['pre-authorized']
 )
 
 authenticator.login()
