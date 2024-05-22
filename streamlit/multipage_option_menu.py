@@ -4,7 +4,7 @@ import sklearn
 import tinydb
 from streamlit_option_menu import option_menu
 import photos
-import videos
+#import videos
 import prenom
 
 
