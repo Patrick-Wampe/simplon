@@ -4,8 +4,8 @@ import yaml
 from yaml.loader import SafeLoader
 import multipage_option_menu
 
-with open('config.yml') as file:
-    config = yaml.load(file, Loader=SafeLoader)
+#with open('config.yml') as file:
+#    config = yaml.load(file, Loader=SafeLoader)
 
 #print(config['credentials'])
 #>>>
